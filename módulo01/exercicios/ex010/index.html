@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links e âncoras</h1>
+    <h2>Usando links externos</h2>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github.</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no Youtube.</a></p>
+    <p><small><strong>Comentário:</strong> <ins>É utilizada a tag &lt;a&gt; (que significa âncora) e o parâmetro <mark>"href" (hypertext reference)</mark> para endereçar o link. <br> Obs.: Para links externos, utilizar parâmetros <mark>target="_blank"</mark> e <mark>rel="external"</mark> ou <mark>rel="nofollow"</mark> (quando não se dá o aval para o link externo).</ins></small></p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <p><small><strong>Comentário:</strong> 
+        <ul>
+            <li>parâmetro: <mark>href="nome_do_arquivo.html"</mark> que está na pasta, ou, <mark>href="pasta/nome_do_arquivo.html"</mark>.</li>
+            <li>parâmetro: <mark>target="_self"</mark> - mantém a navegação na mesma página.</li>
+            <li>parâmetro: <mark>rel="next" e rel="prev"</mark> - importante para os mecânismos de busca. Não tem mudança visual.</li>
+        </ul>
+    Obs.: Para voltar páginas, utilizar <mark>./</mark>pag.html (mesma página) ou <mark>../</mark>pag.html (página anterior)
+    </small></p>
+    <h2>Links para download</h2>
+    <ul type="square">
+        <li><a href="livros/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+        <li><a href="livros/10 - Ligações em toda parte.rar" dowload="10 - Ligações em toda parte.rar" type="application/vnd.rar">Baixar o Livro compactado em RAR</a></li>
+        <li><a href="livros/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Baixar o Livro compactado em ZIP</a></li>
+    </ul>
+    <p><small><strong>Comentário:</strong>
+    <ul>
+        <li>Parâmetro <mark>href="pasta/nome_do_arquivo.PDF"</mark> (ou qualquer outra extensão) define a origem do arquivo no repositório.</li>
+        <li>Parâmetro <mark>download="nome_do_arquivo.PDF"</mark> (ou qualquer outra extensão) para especificar o arquivo a ser baixado.</li>
+        <li>Parâmetro <mark>type</mark> (acessar o site https://www.iana.org/assignments/media-types/media-types.xhtml para encontrar os tipos) para dizer ao navegador o tipo de arquivo a ser baixado.</li>
+    </ul>
+    </small></p>
+</body>
+</html>

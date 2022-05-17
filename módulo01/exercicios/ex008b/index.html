@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1><id="top">Outras formatações</id></h1>
+    <h2>Código Fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. A tag &lt;code&gt; deixa o texto com fonte monoespaçada.</p>
+    <p>O comando document.getElementById('teste') é escrito em linguagem JavaScript. Aqui o texto está sem a tag &lt;code&gt;.</p>
+    <h3>Mantendo a formatação do código</h3>
+    <p><strong>Usa-se a tag &lt;pre&gt; antes da tag &lt;code&gt;. Exemplo:</strong></p>
+    <p><strong>Sem a tag &lt;pre&gt;:</strong></p>
+    <code>
+        num = int(input('Digite um número'))
+        if num %2 == 0:
+            print(f'0 número {num} é PAR')
+        else:
+            print(f'0 número {num} é ÍMPAR')
+        print('Fim do programa')
+    </code>
+    <p><small> Note que os códigos ficarão um do lado do outro, e não é isso que queremos.</small></p>
+    <p><strong>Com a tag &lt;pre&gt;:</strong></p>
+    <pre>
+        <code>
+num = int(input('Digite um número'))
+if num %2 == 0:
+    print(f'0 número {num} é PAR')
+else:
+    print(f'0 número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+    <p><small>Note que agora sim mantivemos a formatação do código.</small></p>
+    <h2>Citações</h2>
+    <h3>Citações Simples</h3>
+    <p>Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q> (utiliza-se a tag &lt;q&gt;)</p>
+    <h3>Citações Completas</h3>
+    <p>Segundo Frank Zappa:</p>
+    <blockquote cite="https://www.frasesfamosas.com.br/frases-de/frank-zappa/">
+        Alguns cientistas acreditam que hidrogênio, por ser tão abundante, é o elemento básico do universo. Eu questiono este pensamento. Existe mais estupidez do que hidrogênio. Estupidez é o elemento básico do universo.
+    </blockquote>
+    <p>Usa-se a tag &lt;blockquote&gt;. Na primeira tag é interessante colocar o parâmetro "cite", ele não muda nada visualmente nem gera link, mas é interessante para os mecanismos de busca.</p>
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Styles Sheets">CSS</abbr>. Estou adorando! (utiliza-se a tag &lt;abbr&gt; com parâmetro "title").
+    </p>
+    <h3>Texto invertido</h3>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+    <p>Utiliza-se a tag &lt;bdo&gt; entre as tags &lt;p&gt; com parâmetro dir="rtl" (rtl= right to left (inverte)) ou dir="ltr" (left to right). Uma tag sem muito sentido, apenas para conhecimento.</p>
+    <p><a href=#top>Voltar ao ínicio.</a></p>
+</body>
+</html>

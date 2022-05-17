@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* 
+            Medidas Absolutas
+            cm, mm, in, PX, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 1em;
+            font-weight: bolder;
+            font-style: italic;
+            /* lighter normal bold bolder ou 100 a 900*/
+        }
+
+        h1 {
+            font: oblique bolder 3em 'Times';
+            /* 
+             substituir essas quatro linhas por uma só:
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic
+
+            shorthand - condensa todas as configurações;
+            nessa ordem: font-style -> font-weight -> font-size -> font-family
+            */
+        }
+
+        h2 {
+            font: bold 2em 'Times';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores facere est sequi debitis consequuntur ab sint. Numquam ad eius, voluptate accusamus quae ipsam odio, rerum tenetur expedita modi maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, dignissimos rerum, tempore cumque sunt minima quisquam animi iste distinctio fugiat perspiciatis perferendis beatae quidem minus cum necessitatibus asperiores assumenda officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam maxime soluta amet. Repellat repudiandae dolorem reprehenderit vero numquam tempore veritatis consequatur quis iure, nesciunt possimus laudantium obcaecati molestias? Adipisci!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate alias, veniam magni quis minus, aspernatur et nostrum asperiores at quas pariatur blanditiis perferendis, ea illum quidem. Repellendus nostrum iure perferendis!</p>
+    <h2>Texto de subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium cumque facilis, pariatur, saepe dolorem, reprehenderit nisi fuga tempora consectetur quod nobis eum. Similique ut hic quibusdam. Illum, maxime ducimus.</p>
+</body>
+</html>

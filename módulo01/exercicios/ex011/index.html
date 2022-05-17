@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p> <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/soul-food.mp3" controls autoplay></audio>
+    <p><small><strong>Comentário: </strong>A tag &lt;audio&gt; juntamente com os parâmetros 'src', 'controls' 'autoplay' podem funcionar, mas dependendo do navegador, o formato do áudio não é suportado. Como foi o caso aqui, não funcionou o autoplay.</small></p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <p><small><strong>Comentário: </strong>Uma forma mais diversificada de inserir audio é pela tag &lt;audio&gt; e logo abaixo utilizar a tag &lt;source&gt;.<br>
+    Na tag &lt;audio&gt; usa-se os parâmetros: 
+        <ul> 
+            <li>'preload' com três opções: auto, metadata e none (Recomendado é o metadata. No auto, o audio é carregado após o carregamento total do site, se o áudio for grande, mais demora para a abertura do mesmo, e none não carrega nada.)</li>
+            <li>'controls' insere controles na faixa de áudio.</li>
+            <li>'autoplay' que indica ao navegador que o áudio deverá ser carregado automaticamente.</li>
+            <li>'loop' que faz com que o áudio se repita em seu término.</li>
+        </ul>
+    A tag &lt;source&gt; deve ser utilizada em ordem de carregamento dos áudios. Ex.: 1°-mp3, 2°- ogg e 3°- wav (não recomendado pelo tamanho). Utilza-se os parâmetros:
+        <ul>
+            <li>'src' que indica onde está a mídia.</li>
+            <li>'type' que indica o tipo de arquivo. Ex.: mp3=audio/mpeg(é o unico tipo que difere da extensão).</li>
+        </ul>
+    Obs.: É recomendado também dar a opção de download do arquivo dentro da tag &lt;source&gt; caso o navegador não carregue nenhum tipo de arquivo.</small></p>
+</body>
+</html>
