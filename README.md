@@ -72,6 +72,6 @@ Primeiros passo na T.I. Iniciando em HTML5 e CSS3. Próxima parada: JavaScript.
 </ul>
 
 <h2>Desafios</h2>
-    <ul>
-      <li><a href="https://luistomasini.github.io/html-css-gustavo-guanabara/modulo02/desafios/d010/android.html">Abrir o desafio 10 - Projeto Android</a></li>  
-    </ul>
+<ul>
+    <li><a href="https://luistomasini.github.io/html-css-gustavo-guanabara/modulo02/desafios/d010/android.html">Abrir o desafio 10 - Projeto Android</a></li>  
+</ul>
